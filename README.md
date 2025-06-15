@@ -92,6 +92,7 @@ This multi-dimensional metric framework enables a comprehensive analysis of both
 ---
 
 ### 📈 2. Monthly Trends Overview  
+![Monthly Trends](images/Monthly_Trends.png)
 **Chart: _"Monthly Trends in Energy Use, Solar Yield, and Temperature"_**
 - **Energy Demand (blue bars)** shows seasonal variation, possibly influenced by climate or consumption patterns.
 - **Daily Yield Peaks (red line)** appear to correlate with temperature, with potential output dips in extremely hot months.
@@ -102,6 +103,7 @@ This multi-dimensional metric framework enables a comprehensive analysis of both
 ---
 
 ### 🕒 3. Revenue Distribution by Time of Day  
+![Revenue Distribution](images/Revenue_Distribution.png)
 **Chart: _"Earnings by Solar Time Segments"_**
 - **Afternoon (39.42%)** and **Morning Peak (32%)** are the most profitable periods.
 - **Noon Peak (13%)** contributes less than expected, likely due to heat-induced efficiency loss.
@@ -110,6 +112,7 @@ This multi-dimensional metric framework enables a comprehensive analysis of both
 ---
 
 ### ⏰ 4. Hourly Output vs. Revenue  
+![Energy Output and Earnings](images/Energy_Output_and_Earnings.png)
 **Chart: _"Energy Output and Earnings per Hour"_**
 - **AC Power Output (blue bars)** and **Revenue (red area)** peak before and after noon.
 - The close alignment between output and revenue indicates that generation is the primary driver of earnings.
@@ -117,6 +120,7 @@ This multi-dimensional metric framework enables a comprehensive analysis of both
 ---
 
 ### 💰 5. Monthly Revenue Trends  
+![Monthly Revenue Trends](images/Monthly_Revenue_Trends.png)
 **Chart: _"Monthly Revenue Trends"_**
 - Revenue exhibits clear seasonality.
 - Some months significantly outperform others, likely due to variations in sunlight hours, weather, or electricity market pricing.
