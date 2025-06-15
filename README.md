@@ -80,23 +80,55 @@ This dashboard tracks and analyzes a range of key performance indicators (KPIs) 
 
 This multi-dimensional metric framework enables a comprehensive analysis of both the **technical health of PV systems** and their **economic impact in the energy market**.
 
-## 📁 Project Structure
+## 📊 Data-Driven Insights
 
-- `dashboard/`: Contains Power BI dashboard files.
-- `data/`: Includes sample datasets used for analysis.
-- `images/`: Stores images used in the README and documentation.
+### 🔍 1. Overall System Performance
+- **Average Daily Yield**: 207.41 kWh, indicating stable system performance over time.
+- **Average Market Price**: 111.58 AUD/MWh, serving as the basis for revenue estimation.
+- **Average Hourly Efficiency**: 89.01%, reflecting a highly efficient power conversion rate from DC to AC.
+- **Maximum Total Yield**: 151.39KWh at peak, demonstrating strong production capacity under optimal conditions.
+- **Total Revenue**: 7.97K AUD, showcasing the system’s economic contribution.
 
-## 📊 Data-Driven Insights (Preliminary)
+---
 
-Based on the current sample data and dashboard visualization, the following preliminary insights can be observed:
+### 📈 2. Monthly Trends Overview  
+**Chart: _"Monthly Trends in Energy Use, Solar Yield, and Temperature"_**
+- **Energy Demand (blue bars)** shows seasonal variation, possibly influenced by climate or consumption patterns.
+- **Daily Yield Peaks (red line)** appear to correlate with temperature, with potential output dips in extremely hot months.
+- **Module vs. Ambient Temperature (purple vs. green lines)**:
+  - Module temperatures consistently exceed ambient temperatures, as expected.
+  - High temperatures may negatively impact system efficiency, suggesting the need for temperature-performance analysis.
 
-- **Power Generation Trends:** The photovoltaic system shows a clear daily and seasonal pattern in AC and DC power outputs, with peak generation typically occurring during midday hours.
-- **Efficiency Variations:** Calculated system efficiency (AC power divided by DC power) fluctuates throughout the day, often decreasing during high ambient temperatures, indicating thermal impacts on inverter performance.
-- **Temperature Effects:** There is a noticeable negative correlation between module temperature and power output, suggesting that higher temperatures may reduce photovoltaic efficiency.
-- **Revenue Estimation:** Revenue correlates closely with power generation patterns, highlighting the financial impact of environmental conditions and system performance.
-- **Anomaly Detection:** Preliminary observations suggest occasional dips in power output that may be linked to transient weather conditions or equipment issues, warranting further investigation.
+---
 
-These insights will be refined and expanded as more data is analyzed and additional features are incorporated into the dashboard.
+### 🕒 3. Revenue Distribution by Time of Day  
+**Chart: _"Earnings by Solar Time Segments"_**
+- **Afternoon (39.42%)** and **Morning Peak (32%)** are the most profitable periods.
+- **Noon Peak (13%)** contributes less than expected, likely due to heat-induced efficiency loss.
+- **Early Morning and Evening** revenues are minimal, in line with solar irradiance patterns.
+
+---
+
+### ⏰ 4. Hourly Output vs. Revenue  
+**Chart: _"Energy Output and Earnings per Hour"_**
+- **AC Power Output (blue bars)** and **Revenue (red area)** peak before and after noon.
+- The close alignment between output and revenue indicates that generation is the primary driver of earnings.
+
+---
+
+### 💰 5. Monthly Revenue Trends  
+**Chart: _"Monthly Revenue Trends"_**
+- Revenue exhibits clear seasonality.
+- Some months significantly outperform others, likely due to variations in sunlight hours, weather, or electricity market pricing.
+
+---
+
+### ✅ Strategic Recommendations
+
+- **Efficiency Optimization**: Investigate midday performance drops; consider cooling mechanisms or panel layout adjustments to mitigate thermal losses.
+- **Revenue Enhancement**: Focus operational improvements on the most profitable time windows—afternoon and morning peaks.
+- **Maintenance Scheduling**: Align system maintenance with low-production months to minimize revenue loss.
+- **Forecast-Driven Strategy**: Incorporate weather and electricity price forecasting to support proactive and intelligent operational planning.
 
 ## 🚀 Next Steps
 
