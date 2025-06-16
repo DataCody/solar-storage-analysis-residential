@@ -1,4 +1,4 @@
-# ☀️ Photovoltaic-Grid-Analysis
+# ☀️ Energy Storage Value Optimization in PV Systems
 
 ## 📘 Project Overview
 
@@ -70,11 +70,13 @@ This dashboard tracks and analyzes a range of key performance indicators (KPIs) 
 - **Grid Demand (MW)**: Reflects total load on the electricity network.
 - **Energy Sold (MWh)**: Actual volume of energy supplied to the grid.
 - **Revenue Estimation (AUD)**: Projected income from solar generation (`AC Power * Market Price`).
+- **ESS Revenue Boost (%)**: Quantifies the financial benefit from time-shifting energy through battery storage.
 
-### ⚠️ Anomaly & Diagnostic Insights
-- **Underperformance Flags**: Detects dips in output relative to irradiance.
-- **Weather-related Dropouts**: Identifies possible losses due to cloud cover or environmental conditions.
-- **Inverter Drop Events**: Sudden zero-AC-output periods that may require maintenance attention.
+### 🔋 Energy Storage Strategy Metrics
+- **Charging Windows**: Identifies surplus generation periods (usually low-price hours) ideal for ESS charging.
+- **Discharging Windows**: Detects high-price hours suitable for profitable ESS discharge.
+- **ESS Utilization Rate**: Measures how efficiently the battery is used throughout the day/year.
+- **Revenue Delta (ESS vs. Baseline)**: Tracks income uplift resulting from optimized ESS dispatch.
 
 ---
 
@@ -122,20 +124,68 @@ This multi-dimensional metric framework enables a comprehensive analysis of both
 ### 💰 5. Monthly Revenue Trends  
 ![Monthly Revenue Trends](images/Monthly_Revenue_Trends.png)
 **Chart: _"Monthly Revenue Trends"_**
-- Revenue exhibits clear seasonality.
-- Some months significantly outperform others, likely due to variations in sunlight hours, weather, or electricity market pricing.
+> **Highlight peak and off-peak months to prepare for energy storage charging/discharging strategy.**
+
+This chart compares monthly revenue **with and without ESS (Energy Storage System)**.
+
+- **🔼 Peak Months**: January and December show significantly higher revenues.  
+  Especially in December, revenue with ESS reaches **1.7K AUD**, about **30% higher** than without ESS.
+  
+- **🔽 Low Months**: June and July are the lowest revenue months due to reduced solar irradiance and shorter daylight hours.  
+  During these periods, ESS offers **limited revenue gain**.
+
+> 💡 **Insight**:  
+> ESS charging and discharging should be **time-of-day aware** — charge during low-price periods (midday) and discharge during peak-price hours (afternoon/evening).  
+> In low-production months, ESS can be used more for **self-consumption** or **price arbitrage**.
 
 ---
 
-### ✅ Strategic Recommendations
+## ✅ Strategic Recommendations
 
-- **Efficiency Optimization**: Investigate midday performance drops; consider cooling mechanisms or panel layout adjustments to mitigate thermal losses.
-- **Revenue Enhancement**: Focus operational improvements on the most profitable time windows—afternoon and morning peaks.
-- **Maintenance Scheduling**: Align system maintenance with low-production months to minimize revenue loss.
-- **Forecast-Driven Strategy**: Incorporate weather and electricity price forecasting to support proactive and intelligent operational planning.
+> **Turn insights into actions that boost system value.**
+
+1. **💰 ESS improves revenue**:
+   - Total revenue increases from **7.97K** to **8.81K AUD**, a **10.5% uplift** with ESS.
+   - This gain is primarily due to **discharging during high electricity price periods**.
+
+2. **📈 ROI analysis over time**:
+   - ROI peaks in **2030 (732%)**, indicating **long-term profitability** of ESS investment.
+   - Negative ROI in **2025 (-17%)** highlights the importance of **understanding payback periods** and early-stage costs.
+
+3. **🔧 Operational Recommendations**:
+   - Mitigate efficiency drops during **high-temperature noon hours** by improving ventilation or adjusting panel layout.
+   - Schedule **preventive maintenance** during low-yield months (e.g., May–July) to minimize revenue disruption.
+
+---
 
 ## 🚀 Next Steps
 
-- Perform detailed data analysis to identify key performance drivers.
-- Enhance dashboard with efficiency and anomaly detection metrics.
-- Incorporate real-world datasets for more robust insights.
+> **Advance toward intelligent, forecast-driven ESS strategies.**
+
+1. **🔋 Simulate different ESS capacities**:
+   - Model various battery capacities (e.g., 10kWh, 20kWh, 50kWh) to compare:
+     - **Revenue increase**
+     - **ROI trends**
+     - **Marginal gain per added capacity**
+
+2. **🤖 Optimize charging/discharging with ML**:
+   - Train models (e.g., `XGBoost`, `LightGBM`, `Random Forest`) using features like:
+     - Hour of day
+     - Electricity price
+     - Solar irradiance
+     - Module/ambient temperature
+     - Historical yield
+   - Enable **dynamic, intelligent ESS control** for price-sensitive operations.
+
+3. **📊 Build ROI simulation framework**:
+   - Combine:
+     - Initial investment
+     - Annual maintenance costs
+     - Revenue with/without ESS  
+   - Output: **10-year ROI projections**, visualized as **ROI curves** for decision-making.
+
+4. **🌤 Integrate forecasting tools**:
+   - Use market and weather forecasting APIs to shift from **static scheduling** to **predictive, data-driven control**.
+   - Forecast-aware ESS strategies can increase both **revenue** and **grid stability**.
+
+---
