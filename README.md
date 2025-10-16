@@ -1,4 +1,4 @@
-# ☀️ Energy Storage Value Optimization in PV Systems
+# ☀️ Data-Driven Solar Revenue Optimization through Power BI Analytics
 
 ## 📘 Project Overview
 
